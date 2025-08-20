@@ -1,1 +1,10 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
+
+/*
+ * FilamentPHP 4 no longer relies on a dedicated Tailwind configuration file.  Any
+ * Tailwind customizations should be authored directly in this CSS using
+ * `@tailwind` directives and plugin registrations.  The import above
+ * continues to pull in the core Filament theme styles.  Additional
+ * utilities, such as the forms and typography plugins, will be loaded
+ * automatically because they are registered in package.json.
+ */
