@@ -10,7 +10,7 @@
 @endphp
 
 <x-dynamic-component :component="$getFieldWrapperView()" :field="$field">
-    <<div {{ $getExtraAttributeBag()->grid($getColumns(), $getGridDirection())->class(['gap-5']) }}>
+    <div {{ $getExtraAttributeBag()->grid($getColumns(), $getGridDirection())->class(['gap-5']) }}>
         
         @foreach ($getOptions() as $value => $label)
             @php
@@ -109,4 +109,4 @@
             </label>
         @endforeach
   
-</</div>
+</div>
