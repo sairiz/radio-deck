@@ -8,10 +8,9 @@ trait HasGap
 {
     protected string|Closure|null $gap = null;
 
-    public function gap(bool|Closure|null $gap): static
+    public function gap(Closure|bool|null $condition = true): static
     {
-        $this->gap = $gap;
-
+        $this->gap = $condition;
         return $this;
     }
 
